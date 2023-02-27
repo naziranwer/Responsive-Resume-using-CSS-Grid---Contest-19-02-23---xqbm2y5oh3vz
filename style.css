@@ -7,3 +7,145 @@
 }
 
 /* Write CSS code below */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+}
+.main-content{
+    display: grid;
+    grid-template-columns:300px 700px;
+    min-height: 1000px;
+    width: 90%;
+}
+
+/* -----Left Section----- */
+
+.left-section{
+background-color: #E5E5E5;
+}
+.left-content{
+    padding: 1rem;
+}
+.profile-image{
+    display: block;
+    margin: auto;
+    border: 5px white solid;
+    border-radius: 30%;
+    width: 60%;
+}
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02px;
+    text-transform: uppercase;
+    padding: 0.8rem;
+}
+.designation{
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+}
+.description{
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 1rem;
+}
+.contact-item{
+    display: flex;
+    flex-direction: column;
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.personal-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon {
+    /* display: inline-flex; */
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    /* border-radius: 50%; */
+    /* background-color: #000; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+     /* transition: all 0.3s ease-in-out; */
+  } 
+  .skills-title{
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+  }
+  .progress-bar{
+    border: 1px white solid;
+    height: 4px;
+  }
+/* -----Right Section----- */
+
+.right-section{
+background-color: #F5F5F5;
+width: 90%;
+grid-column-start: 2;
+}
+.right-main-content{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 48px;
+    padding-right: 48px;
+}
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+
+
+
+
+@media screen and (min-width: 674px) {
+    .main-content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+/* Optional media query for reducing font size */
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Optional CSS to make text editable */
+[contenteditable="true"] {
+  outline: none;
+  cursor: text;
+}
+
+
+
+
+
